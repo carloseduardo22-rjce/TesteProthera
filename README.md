@@ -37,6 +37,18 @@ A estrutura do projeto foi organizado da seguinte forma:
 
 <img align="center" src="./Estrutura projeto.png" width="314px" height="514px"/>
 
-## Pacote Principal 
+## Pacote Main 
 
 - **Classe Main**: Responsável pelo fluxo principal do programa. A classe `Main` serve como ponto de entrada da aplicação, onde são instanciadas as classes de serviço e chamadas as funcionalidades principais. Isso ajuda a separar a lógica de execução da lógica de negócios, facilitando a manutenção e o entendimento do código.
+
+## Pacote Entities
+
+- **Entidades**: Contém as classes que representam os dados do domínio, como `Pessoa` e `Funcionario`. Separar as entidades em um pacote distinto ajuda a isolar a lógica de negócios das regras de manipulação de dados, tornando o código mais organizado e fácil de entender.
+
+## Pacote Service
+
+- **Serviços**: Contém as classes responsáveis pela lógica de negócios, como `PayrollService` e `EmployeeService`. Colocar a lógica de negócios em serviços separados promove a reutilização de código e facilita a realização de testes unitários, uma vez que a lógica é desacoplada da interface de usuário e das entidades.
+
+## Pacote Factory
+
+- **Fábricas**: Contém classes de fábrica responsáveis por instanciar objetos, como a `EmployeeFactory`. O uso do padrão de design Factory Method permite a criação de objetos de forma centralizada e flexível, promovendo a separação de responsabilidades e facilitando a manutenção do código.
