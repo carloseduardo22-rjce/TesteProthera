@@ -52,3 +52,8 @@ A estrutura do projeto foi organizado da seguinte forma:
 ## Pacote Factory
 
 - **Fábricas**: Contém classes de fábrica responsáveis por instanciar objetos, como a `EmployeeFactory`. O uso do padrão de design Factory Method permite a criação de objetos de forma centralizada e flexível, promovendo a separação de responsabilidades e facilitando a manutenção do código.
+
+## Testes Unitários
+
+- Os testes unitários são fundamentais para garantir a qualidade e a estabilidade do nosso projeto. Com eles, podemos verificar de forma automatizada cada componente isoladamente, assegurando que cada método se comporte conforme o esperado. Isso não apenas ajuda a identificar bugs precocemente, mas também facilita a manutenção do código ao longo do tempo, promovendo um desenvolvimento mais seguro e eficiente. Com os testes unitários em vigor, podemos ter confiança de que nosso código está funcionando corretamente, mesmo após modificações e expansões. Em resumo, testes unitários são uma prática recomendada para garantir a robustez e escalabilidade dos nossos projetos. Devido a sua importância eu resolvi por testes em meu projeto e testar as principais funcionalidades.
+
