@@ -35,4 +35,4 @@ O projeto deve atender aos seguintes requisitos:
 
 A estrutura do projeto foi organizado da seguinte forma:
 
-<img align="center" src="Estrutura do projeto.png" width="100%"/>
+<img align="center" src="./Estrutura Projeto.png" width="100%"/>
