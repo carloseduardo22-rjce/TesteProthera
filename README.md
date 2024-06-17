@@ -61,3 +61,11 @@ A estrutura do projeto foi organizado da seguinte forma:
 
 - Os testes unitários são fundamentais para garantir a qualidade e a estabilidade do nosso projeto. Com eles, podemos verificar de forma automatizada cada componente isoladamente, assegurando que cada método se comporte conforme o esperado. Isso não apenas ajuda a identificar bugs precocemente, mas também facilita a manutenção do código ao longo do tempo, promovendo um desenvolvimento mais seguro e eficiente. Com os testes unitários em vigor, podemos ter confiança de que nosso código está funcionando corretamente, mesmo após modificações e expansões. Em resumo, testes unitários são uma prática recomendada para garantir a robustez e escalabilidade dos nossos projetos. Devido a sua importância eu resolvi por testes em meu projeto e testar as principais funcionalidades.
 
+## Uso
+
+- Clone o repositório: 
+
+```
+https://github.com/carloseduardo22-rjce/TesteProthera.git
+```
+
