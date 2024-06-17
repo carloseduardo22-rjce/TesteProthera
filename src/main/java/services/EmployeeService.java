@@ -14,7 +14,6 @@ import entities.Employee;
 
 public class EmployeeService {
 	
-	// Requisito 3.5
     public Map<String, List<Employee>> groupByFunction(List<Employee> employees) {
         Map<String, List<Employee>> employeesByFunction = new HashMap<>();
         for (Employee employee : employees) {
@@ -33,7 +32,7 @@ public class EmployeeService {
             System.out.printf("%-20s %-20s %-20s %-20s\n", "Nome", "Data de Nascimento", "Salário", "Função");
             for (Employee employee : entry.getValue()) {
                 String dataNascimento = employee.getBirthDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-                String salarioFormatado = formatarValor(employee.getSalary());
+                String salarioFormatado = formatValue(employee.getSalary());
                 System.out.printf("%-20s %-20s %-20s %-20s\n", employee.getName(), dataNascimento, salarioFormatado, employee.getFunction());
             }
             
@@ -54,7 +53,7 @@ public class EmployeeService {
             } else {
                 for (Employee employee : employeesWithBirthdayInMonth) {
                     String dataNascimento = employee.getBirthDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-                    String salarioFormatado = formatarValor(employee.getSalary());
+                    String salarioFormatado = formatValue(employee.getSalary());
                     System.out.printf("%-20s %-20s %-20s %-20s\n", employee.getName(), dataNascimento, salarioFormatado, employee.getFunction());
                 }
             }
@@ -89,7 +88,7 @@ public class EmployeeService {
         }
     }
 
-    private String formatarValor(BigDecimal valor) {
+    private String formatValue(BigDecimal valor) {
         return String.format("%.2f", valor);
     }
 }

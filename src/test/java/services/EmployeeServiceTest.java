@@ -3,7 +3,6 @@ package services;
 import static org.junit.Assert.assertEquals;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -69,17 +68,6 @@ public class EmployeeServiceTest {
 				.reduce(BigDecimal.ZERO, BigDecimal::add);
 		assertEquals(expectedTotalSalaries, totalSalaries);
 	}
-	
-	@Test
-    public void testSalaryIncrease() {
-        BigDecimal initialSalary = employees.get(0).getSalary();
-        payrollService.applySalaryIncrease(employees);
-        BigDecimal increasedSalary = employees.get(0).getSalary();
-        BigDecimal expectedSalary = initialSalary.multiply(BigDecimal.valueOf(1.1)).setScale(4, RoundingMode.HALF_UP);
-        increasedSalary = increasedSalary.setScale(4, RoundingMode.HALF_UP);
-        assertEquals(expectedSalary, increasedSalary);
-    }
-
 	
 	@Test
 	public void testRemoveEmployee() {

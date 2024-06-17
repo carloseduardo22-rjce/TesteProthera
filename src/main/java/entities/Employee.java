@@ -28,8 +28,8 @@ public class Employee extends Person {
 	}
 
 	public void setFunction(String function) {
-		this.function = function;
-	}
+        this.function = function;
+    }
 	
 	// Requisito 3.3
 	@Override
