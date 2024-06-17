@@ -67,7 +67,7 @@ public class Main {
         }
         employees.forEach(System.out::println);
 
-        // Requisito 3.6
+        // Requisito 3.5 e 3.6
         System.out.println(divider);
         System.out.println("Funcionários por função:");
         try {
