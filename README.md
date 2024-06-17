@@ -47,7 +47,7 @@ A estrutura do projeto foi organizado da seguinte forma:
 
 ## Pacote Entities
 
-- **Entidades**: Contém as classes que representam os dados do domínio, como `Pessoa` e `Funcionario`. Separar as entidades em um pacote distinto ajuda a isolar a lógica de negócios das regras de manipulação de dados, tornando o código mais organizado e fácil de entender.
+- **Entidades**: Contém as classes que representam os dados do domínio, como `Pessoa` e `Funcionário`. Separar as entidades em um pacote distinto ajuda a isolar a lógica de negócios das regras de manipulação de dados, tornando o código mais organizado e fácil de entender.
 
 ## Pacote Services
 
