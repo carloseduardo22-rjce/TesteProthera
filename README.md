@@ -45,7 +45,7 @@ A estrutura do projeto foi organizado da seguinte forma:
 
 - **Entidades**: Contém as classes que representam os dados do domínio, como `Pessoa` e `Funcionario`. Separar as entidades em um pacote distinto ajuda a isolar a lógica de negócios das regras de manipulação de dados, tornando o código mais organizado e fácil de entender.
 
-## Pacote Service
+## Pacote Services
 
 - **Serviços**: Contém as classes responsáveis pela lógica de negócios, como `PayrollService` e `EmployeeService`. Colocar a lógica de negócios em serviços separados promove a reutilização de código e facilita a realização de testes unitários, uma vez que a lógica é desacoplada da interface de usuário e das entidades.
 
