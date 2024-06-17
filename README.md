@@ -31,6 +31,10 @@ O projeto deve atender aos seguintes requisitos:
         - 3.11. Imprimir o total dos salários dos funcionários.
         - 3.12. Imprimir quantos salários mínimos ganha cada funcionário (considerando salário mínimo de R$1212.00).
 
+**Tabela**:
+
+<img align="center" src="./Tabela.png" width="604px" height="280px"/>
+
 ## Estrutura do Projeto
 
 A estrutura do projeto foi organizado da seguinte forma:
