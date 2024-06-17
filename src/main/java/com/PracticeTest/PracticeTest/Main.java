@@ -127,4 +127,5 @@ public class Main {
             System.err.println("Erro ao calcular salários em salários mínimos: " + e.getMessage());
         }
     }
+    
 }

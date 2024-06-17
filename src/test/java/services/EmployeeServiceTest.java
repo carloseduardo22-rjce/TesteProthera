@@ -40,6 +40,30 @@ public class EmployeeServiceTest {
 	}
 	
 	@Test
+	public void testRemoveEmployee() {
+		int sizeInitial = employees.size();
+		employees.removeIf(f -> f.getName().equals("João"));
+		assertEquals(sizeInitial - 1, employees.size());
+	}
+	
+	@Test
+	public void testApplySalaryIncrease() {
+		payrollService.applySalaryIncrease(employees);
+		assertEquals(new BigDecimal("2210.3840"), employees.get(0).getSalary());
+	}
+	
+	@Test
+	public void testGetTotalSalaries() {
+		employees.removeIf(f -> f.getName().equals("João"));
+		payrollService.applySalaryIncrease(employees);
+		BigDecimal totalSalaries = employeeService.getTotalSalaries(employees);
+		BigDecimal expectedTotalSalaries = employees.stream()
+				.map(Employee::getSalary)
+				.reduce(BigDecimal.ZERO, BigDecimal::add);
+		assertEquals(expectedTotalSalaries, totalSalaries);
+	}
+	
+	@Test
 	public void totalFunctions() {
 		Map<String, List<Employee>> groupByFunction = employeeService.groupByFunction(employees);
 		assertEquals(7, groupByFunction.size());
@@ -56,24 +80,6 @@ public class EmployeeServiceTest {
 		List<Employee> sortedEmployees = employeeService.getEmployeesSortedByName(employees);
 		assertEquals("Alice", sortedEmployees.get(0).getName());
 		assertEquals("Miguel", sortedEmployees.get(sortedEmployees.size() - 1).getName());
-	}
-	
-	@Test
-	public void testGetTotalSalaries() {
-		employees.removeIf(f -> f.getName().equals("João"));
-		payrollService.applySalaryIncrease(employees);
-		BigDecimal totalSalaries = employeeService.getTotalSalaries(employees);
-		BigDecimal expectedTotalSalaries = employees.stream()
-				.map(Employee::getSalary)
-				.reduce(BigDecimal.ZERO, BigDecimal::add);
-		assertEquals(expectedTotalSalaries, totalSalaries);
-	}
-	
-	@Test
-	public void testRemoveEmployee() {
-		int sizeInitial = employees.size();
-		employees.removeIf(f -> f.getName().equals("João"));
-		assertEquals(sizeInitial - 1, employees.size());
 	}
 	
 }
