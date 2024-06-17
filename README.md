@@ -4,6 +4,10 @@
 
 Este projeto foi desenvolvido como parte de um teste técnico para a vaga de Desenvolvedor Full-Stack Júnior na Prothera. O objetivo é gerenciar uma lista de funcionários de uma indústria, realizando diversas operações sobre eles, como inserção, remoção, agrupamento e cálculos diversos.
 
+**Tabela**:
+
+<img align="center" src="./Tabela.png" width="604px" height="280px"/>
+
 ## Requisitos
 
 O projeto deve atender aos seguintes requisitos:
@@ -30,10 +34,6 @@ O projeto deve atender aos seguintes requisitos:
         - 3.10. Imprimir a lista de funcionários por ordem alfabética.
         - 3.11. Imprimir o total dos salários dos funcionários.
         - 3.12. Imprimir quantos salários mínimos ganha cada funcionário (considerando salário mínimo de R$1212.00).
-
-**Tabela**:
-
-<img align="center" src="./Tabela.png" width="604px" height="280px"/>
 
 ## Estrutura do Projeto
 
