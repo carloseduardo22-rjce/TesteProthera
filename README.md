@@ -61,6 +61,12 @@ A estrutura do projeto foi organizado da seguinte forma:
 
 - Os testes unitários são fundamentais para garantir a qualidade e a estabilidade do nosso projeto. Com eles, podemos verificar de forma automatizada cada componente isoladamente, assegurando que cada método se comporte conforme o esperado. Isso não apenas ajuda a identificar bugs precocemente, mas também facilita a manutenção do código ao longo do tempo, promovendo um desenvolvimento mais seguro e eficiente. Com os testes unitários em vigor, podemos ter confiança de que nosso código está funcionando corretamente, mesmo após modificações e expansões. Em resumo, testes unitários são uma prática recomendada para garantir a robustez e escalabilidade dos nossos projetos. Devido a sua importância eu resolvi por testes em meu projeto e testar as principais funcionalidades.
 
+- Para realizar os testes na IDE (Eclipse) basta você realizar os seguintes passos: 
+  - Clicar com o botão direito encima do Projeto
+  - Clicar em Run As
+  - No menu, clique em JUnit Test.
+- Após estes passos os testes serão executados.
+
 ## Uso
 
 - Clone o repositório: 
