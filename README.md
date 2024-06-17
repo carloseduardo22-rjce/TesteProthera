@@ -36,3 +36,7 @@ O projeto deve atender aos seguintes requisitos:
 A estrutura do projeto foi organizado da seguinte forma:
 
 <img align="center" src="./Estrutura projeto.png" width="314px" height="514px"/>
+
+## Pacote Principal 
+
+- **Classe Main**: Responsável pelo fluxo principal do programa. A classe `Main` serve como ponto de entrada da aplicação, onde são instanciadas as classes de serviço e chamadas as funcionalidades principais. Isso ajuda a separar a lógica de execução da lógica de negócios, facilitando a manutenção e o entendimento do código.
