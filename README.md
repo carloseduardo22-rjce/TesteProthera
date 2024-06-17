@@ -75,7 +75,7 @@ A estrutura do projeto foi organizado da seguinte forma:
 https://github.com/carloseduardo22-rjce/TesteProthera.git
 ```
 
-- Depois de clonar, importe-o na sua IDE de preferência e atualize as dependências do Maven. No Eclipse, a IDE onde o projeto foi desenvolvido, há uma funcionalidade específica para isso. Basta clicar com o botão direito no projeto, selecionar "Maven" no menu que aparece e, em seguida, escolher a opção "Update Project". Isso garantirá que todas as dependências do projeto sejam atualizadas corretamente. Concluíndo essas etapas agora é só clicar em Run(Nome do projeto) para rodar o projeto.
+- Depois de clonar, importe-o na sua IDE de preferência e rode o projeto.
 
 ## Observação
 
