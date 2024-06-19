@@ -20,7 +20,7 @@ public class EmployeeFactoryTest {
 	
 	@Before
 	public void setUp() {
-		String[][] EMPLOYEE_DATA = {
+		String[][] employeeData = {
 				{"Maria", "18/10/2000", "2009.44", "Operador"},
                 {"João", "12/05/1990", "2284.38", "Operador"},
                 {"Caio", "02/05/1961", "9836.14", "Coordenador"},
@@ -35,7 +35,7 @@ public class EmployeeFactoryTest {
 		
 		employees = new ArrayList<>();
 		
-		for (String[] data : EMPLOYEE_DATA) {
+		for (String[] data : employeeData) {
 			employees.add(EmployeeFactory.create(data[0], data[1], data[2], data[3]));
 		}
 	}
@@ -47,6 +47,15 @@ public class EmployeeFactoryTest {
 		assertEquals(LocalDate.parse("18/10/2000", formatter), employee.getBirthDate());
 		assertEquals(new BigDecimal("2009.44"), employee.getSalary());
 		assertEquals("Operador", employee.getFunction());
+	}
+	
+	@Test
+	public void lastEmployeeTest() {
+		Employee employee = employees.get(employees.size() -1);
+		assertEquals("Helena", employee.getName());
+		assertEquals(LocalDate.parse("02/09/1996", formatter), employee.getBirthDate());
+		assertEquals(new BigDecimal("2799.93"), employee.getSalary());
+		assertEquals("Gerente", employee.getFunction());
 	}
 	
 	

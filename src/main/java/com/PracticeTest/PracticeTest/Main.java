@@ -22,7 +22,7 @@ public class Main {
         PayrollService payrollService = new PayrollService();
         EmployeeService employeeService = new EmployeeService();
         
-        String[][] EMPLOYEE_DATA = {
+        String[][] employeeData = {
                 {"Maria", "18/10/2000", "2009.44", "Operador"},
                 {"João", "12/05/1990", "2284.38", "Operador"},
                 {"Caio", "02/05/1961", "9836.14", "Coordenador"},
@@ -38,7 +38,7 @@ public class Main {
         List<Employee> employees = new ArrayList<>();
         
         // Requisito 3.1
-        for (String[] data : EMPLOYEE_DATA) {
+        for (String[] data : employeeData) {
             try {
                 employees.add(EmployeeFactory.create(data[0], data[1], data[2], data[3]));
             } catch (Exception e) {
